@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CA+Guides&family=Playwrite+HR+Lijeva+Guides&display=swap"
+        rel="stylesheet">
+        <!-- font awesome import  -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <!-- tailwindcss link add  -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="justify-center my-8 px-4">
+        <div class="flex justify-between items-center px-4 py-2 lg:px-8">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <div class="rounded-full bg-lime-400 p-2 flex items-center justify-center w-6 h-6">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-gray-600 text-sm"></i>
+                </div>
+                <span class="font-bold text-2xl ml-2">Rinterio</span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex text-gray-500 space-x-5 items-center">
+                <a class="hover:text-black active:text-black text-black" href="#">Home</a>
+                <a class="hover:text-black active:text-black" href="#">Service</a>
+                <a class="hover:text-black active:text-black" href="#">Portfolio</a>
+                <a class="hover:text-black active:text-black" href="#">Blogs</a>
+                <a class="hover:text-black active:text-black" href="#">Contact Us</a>
+            </div>
+            
+           
+            <div class="hidden sm:flex space-x-5 items-center">
+                <!-- Search Icon -->
+                <div class="rounded-full bg-white p-2 flex items-center justify-center w-9 h-9 shadow-md">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- Cart Icon -->
+                <div class="rounded-full bg-white p-2 flex items-center justify-center w-9 h-9 shadow-md">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <!-- Book Consult Button -->
+                <button class="flex items-center p-2 bg-lime-400 font-bold rounded-3xl">
+                    Book Consult
+                    <div class="rounded-full bg-black p-2 flex items-center justify-center w-6 h-6 ml-2">
+                        <i class="fa-solid fa-arrow-right text-white -rotate-45 text-sm"></i>
+                    </div>
+                </button>
+            </div>
+            
+            <div class="lg:hidden">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28"></main>
+</body>
+
+
+</html>
