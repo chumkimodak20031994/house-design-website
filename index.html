@@ -11,25 +11,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CA+Guides&family=Playwrite+HR+Lijeva+Guides&display=swap"
         rel="stylesheet">
-        <!-- font awesome import  -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-        <!-- tailwindcss link add  -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-              theme: {
+    <!-- font awesome import  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- tailwindcss link add  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
+                    colors: {
+                        clifford: '#da373d',
+                    }
                 }
-              }
             }
-          </script>
+        }
+    </script>
 </head>
+
 <body>
     <!-- navigation bar -->
-    <nav class="justify-center my-8 px-4">
+    <nav class="justify-center my-8 lg:px-16">
         <div class="flex justify-between items-center px-4 py-2 lg:px-8">
             <!-- Logo Section -->
             <div class="flex items-center">
@@ -38,7 +39,7 @@
                 </div>
                 <span class="font-bold text-2xl ml-2">Rinterio</span>
             </div>
-            
+
             <!-- Navigation Links -->
             <div class="hidden lg:flex text-gray-500 space-x-5 items-center">
                 <a class="hover:text-black active:text-black text-black" href="#">Home</a>
@@ -47,8 +48,8 @@
                 <a class="hover:text-black active:text-black" href="#">Blogs</a>
                 <a class="hover:text-black active:text-black" href="#">Contact Us</a>
             </div>
-            
-           
+
+
             <div class="hidden sm:flex space-x-5 items-center">
                 <!-- Search Icon -->
                 <div class="rounded-full bg-white p-2 flex items-center justify-center w-9 h-9 shadow-md">
@@ -66,7 +67,7 @@
                     </div>
                 </button>
             </div>
-            
+
             <div class="lg:hidden">
                 <i class="fa-solid fa-list"></i>
             </div>
@@ -74,7 +75,33 @@
     </nav>
 
     <!-- main content -->
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28"></main>
+    <main class="max-w-screen-xl mx-auto px-16">
+        <div class="flex flex-col items-center justify-center h-screen space-y-6 px-6">
+            <div>
+                <img src="./assets/banner.png" alt="Banner Image" class="max-w-full h-auto">
+            </div>
+            <div>
+                <h1 class="text-center font-extrabold text-5xl lg:text-4xl">
+                    A barn house of this design has a <br>striking appearance
+                </h1>
+                <p class="text-center mt-5 text-gray-600 text-sm">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, 
+                    featuring weathered wood, sleek metal 
+                    accents, and large windows that flood the space with natural light.
+                </p>
+            </div>
+            <div>
+                <button class="flex items-center p-2 bg-lime-200 font-bold rounded-3xl">
+                    View Details
+                    <div class="rounded-full bg-lime-400 p-2 flex items-center justify-center w-6 h-6 ml-2">
+                        <i class="fa-solid fa-arrow-right text-black -rotate-45 text-sm"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+    </main>
+
 </body>
 
 
